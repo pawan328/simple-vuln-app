@@ -1,0 +1,2 @@
+# minimal dependencies
+# none needed for this simple example
