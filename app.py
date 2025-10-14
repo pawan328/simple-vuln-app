@@ -4,13 +4,6 @@ import pathlib
 import subprocess
 
 
-def run_command():
-    """Deliberately vulnerable: unsanitized user input passed to shell."""
-    user_input = input("Enter a directory to list: ")
-    # ❌ Vulnerability: passing user input directly into shell=True
-    subprocess.run(f"ls {user_input}", shell=True)
-
-
 def main():
     """Launch the Streamlit Home page."""
     # Path to the HOME.py file
@@ -28,5 +21,4 @@ def main():
 
 
 if __name__ == "__main__":
-    run_command()
     main()
